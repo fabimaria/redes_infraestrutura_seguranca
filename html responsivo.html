@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1>Hedy Lamarr</h1>
+  <h3>Como Hedy Lamarr criou o Wi-fi?</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">História</div>
+    <div class="menuitem">Fotos</div>
+  </div>
+
+  <div class="main">
+    <h2>História</h2>
+    <p>A internet Wi-Fi e a conexão Bluetooth, duas das tecnologias mais importantes nos dias de hoje, só saíram do papel graças a uma mulher judia que se refugiou nos Estados Unidos. 
+	Hedy Lamarr, que morreu em 2000 aos 85 anos,além de ser uma renomada atriz do começo do século passado, era também inventora. Ela desenvolveu o sistema de salto em frequência, 
+	planejado originalmente para guiar torpedos submarinos usando sinais de rádio.
+	Esse sistema é a base para o espectro de propagação de salto de frequência (FHSS, na sigla em inglês), que é amplamente usado em aparelhos de comunicação sem fio. 
+	Nele, o sinal de rádio "salta" de um canal para o outro de forma aleatória e sem perder a conexão. Assim, o sinal sofre menos risco de interferência e de congestionamento, 
+	além de tornar mais difícil a interceptação.
+	
+	(https://www.techtudo.com.br/noticias/2022/04/quem-foi-hedy-lamarr-a-inventora-das-redes-wi-fi.ghtml/)</p>
+    <img src="hedy.jpg" style="width:100%">
+	<img src="wifi.jpg" style="width:100%">
+	
+  </div>
+
+  <div class="right">
+    <h2>Quem?</h2>
+    <p> Nome artístico de Hedwig Eva Maria Kiesler (Vienna, 9 de novembro de 1914 — Altamonte Springs, 19 de janeiro de 2000),
+	foi uma atriz e inventora austríaca radicada no Estados Unidos..</p>
+    <h2>Onde?</h2>
+    <p>Nascida na capital da Áustria-Hungria, Viena, Hedy começou sua carreira de atriz em vários filmes alemães, austríacos e tchecos, inclusive o controverso filme Ecstasy (1933). 
+	Em 1937, ela fugiu de seu marido, o fabricante de armas austríaco, Friedrich Mandl, mudando-se para Paris e depois se refugiando em Londres. Lá ela conheceu Louis B. Mayer, 
+	diretor dos estúdios da Metro-Goldwyn-Mayer (MGM) e lhe ofereceu um contrato em Hollywood, onde ela logo foi promovida como sendo a "mulher mais bonita do mundo".[4].</p>
+    <h2>Prêmios?</h2>
+    <p>	EFF Pioneer Award (1997); National Inventors Hall of Fame (2014); estrela na calçada da fama de Hollywood!</p>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Esta página web é uma parte de uma demonstração de web design fluido feita por w3schools.com. Redimensione a janela do navegador para ver o conteúdo responder ao redimensionamento.</div>
+
+</body>
+</html>
+
