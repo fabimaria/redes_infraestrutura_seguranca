@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: justify;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:rgba(255, 99, 71, 0.5);padding:15px;"> 
+  <h1>Resumo Apostila</h1>
+  <h3>Páginas: 03,04,05 e 06</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Topologia de rede - Tema 03</div>
+    <div class="menuitem">IPV4, Máscara de Rede e Gateway - Tema 04</div>
+	<div class="menuitem">IPv6 - Tema 05</div>
+	<div class="menuitem">Padrões Ethernet - Tema 06</div>
+  </div>
+
+  <div class="main">
+    <h2>Topologia de rede - Tema 03</h2>
+    <p> 
+Topologia é um sistema no qual demonstra como os hosts estão conectados na rede. 
+É a disposição física ou lógica dos dispositivos em uma rede. É como o esqueleto que dá forma e direção a todo o sistema. 
+Ela determina como os dispositivos estão interligados, quais caminhos os dados percorrem e como a comunicação é estabelecida. 
+A identificação de topologias de rede é o ponto de partida. Isso envolve a análise das conexões físicas entre dispositivos, 
+como cabos e switches, bem como a configuração lógica da rede, como endereços IP e sub-redes. As diferentes topologias como: estrela, 
+barramento, anel e malha, é crucial para tomar decisões informadas no projeto de uma rede elas influenciam diretamente a eficiência, 
+a escalabilidade, a redundância e a tolerância a falhas da rede.
+</p>
+
+ <div class="main">
+    <h2>IPV4, Máscara de Rede e Gateway - Tema 04</h2>
+    <p> 
+Para eu obter a comunicação entre os hosts da minha rede, eu preciso da parte física (topologia, cabeamento) para que a rede tenha a possiblidade 
+de ter uma comunicação entre os hosts, porém necessita ter a configuração lógica (IPV4, Máscara de Rede, Gateway e DNS), sem esses fatores não é 
+possível estabelecer uma comunicação entre os hosts da rede. <br>
+<br>
+<h3>IPv4:</h3>
+<p>Os Endereços Digitais Únicos O IPv4 (Internet Protocol version 4) é o sistema de endereçamento padrão utilizado para identificar dispositivos em uma rede. 
+Funciona como um equivalente digital de endereços postais. Um endereço IPv4 é composto por quatro grupos de números, variando de 0 a 255, separados por pontos. 
+Cada dispositivo em uma rede tem um endereço IPv4 exclusivo, permitindo que os dados sejam enviados ao destinatário correto. 
+No entanto, o esgotamento dos endereços IPv4 disponíveis é uma preocupação crescente, impulsionando a adoção do IPv6, que oferece um espaço de endereço muito maior. <br>
+<br>
+
+<h3>Máscara de Rede:</h3> 
+<p>Segmentando Comunicações. Imagine uma cidade dividida em bairros, e cada bairro possui um código postal específico. Da mesma forma, a máscara de rede
+ divide uma rede em segmentos menores, permitindo que dispositivos em cada segmento se comuniquem eficientemente. A máscara de rede é uma série de bits que, 
+ quando combinados com o endereço IP, definem qual parte do endereço identifica a rede e qual parte identifica os dispositivos individuais. 
+ Ao segmentar uma rede em sub-redes, a máscara de rede otimiza o uso de endereços IP e melhora o desempenho da comunicação.<br>
+ <br>
+ 
+<h3>Gateway:</h3>
+<p>A Ponte entre Redes. O gateway, também conhecido como roteador, é o ponto de entrada e saída de uma rede para outras redes ou para a internet. Ele atua como
+ uma espécie de porteiro digital, direcionando o tráfego de dados entre redes diferentes. Sem o gateway, a comunicação ficaria restrita apenas à rede local. 
+ Quando um dispositivo deseja se comunicar fora da rede local, ele envia os dados para o gateway, que encaminha os dados para a rede de destino. 
+ É o gateway que torna possível a comunicação entre diferentes redes e a navegação na internet.<br>
+ <br>
+ 
+<h3>A Sinfonia da Comunicação em Rede:</h3>
+<p>O IPv4, a máscara de rede e o gateway trabalham em conjunto para criar uma sinfonia de comunicação em rede. 
+O endereço IPv4 identifica os dispositivos, a máscara de rede segmenta as redes e a comunicação, e o gateway permite que os dados fluam entre redes separadas. 
+Esses elementos são essenciais para que o correio eletrônico seja entregue, os sites sejam carregados e os dados sejam trocados em redes locais e globais.
+</p>
+
+<div class="main"> 
+    <h2>IPv6 - Tema 05</h2>
+    <p> O crescimento exponencial da internet e a proliferação de dispositivos conectados trouxeram à tona um desafio fundamental: a escassez de endereços IP disponíveis
+	no protocolo IPv4. Para atender às demandas de uma era digital em constante expansão, surgiu o IPv6 (Internet Protocol version 6), a próxima geração do protocolo IP. 
+	O IPv6 não é apenas uma atualização técnica; é uma transformação profunda que está moldando o futuro da comunicação online.  
+Os endereços IPv6 foram criados com 128 bits de comprimento e nele é utilizado a 44 notação hexadecimal, para facilitar a leitura dos endereços. Esses 128 bits são distribuído 
+dentro de oito seções, cada uma possuindo então 2 bytes de comprimento. Para representação desses dois bytes na notação hexadecimal são necessários 4 dígitos, ou seja, 
+o endereçamento IPv6 é representado na forma de 32 dígitos hexadecimais. 
+
+Ex.: Fazendo a conversão: 128 bits = 16 bytes = 32 dígitos hexadecimais. 
+
+FFDC:4738:D423:8800:0000:57AB:BC99:3200
+
+Uma das habilidades fundamentais necessárias é a configuração de endereços IPv6. Ao contrário do IPv4, que utiliza notação decimal pontuada, o IPv6 utiliza uma notação hexadecimal 
+e introduz um conjunto de regras específicas para configurar endereços, incluindo endereços unicast, multicast e anycast. Compreender essas regras é crucial para implantar o IPv6 
+com sucesso.
+</p>
+
+<div class="main">
+    <h2>Padrões Ethernet - Tema 06</h2>
+    <p>Redes Ethernet é denominada por redes que utilizam cabos par trançados, para redes que não utilizamos cabos denominado rede Wireless/Redes sem fio, porem na história da informática 
+as redes Ethernet tiveram vários aperfeiçoamentos por volta dos anos de 1970. 
+Existem três padrões importantes na rede Ethernet: 10Base-T - 10 Megabit;100Base-TX - 100 Megabit e 1000Base-T - 1000 Megabit (Velocidade de Transmissão).
+Atualmente existem diversos padrões Ethernet que é de extrema importância conhecer, pois não existem padrões Ethernet somente para o cabo par trançado, mas também para fibra óptica 
+entre outros.
+O padrão Ethernet é constituído por três princípios, nos quais reunidos definem de que forma os dados irão ser transmitido através do meio físico, sendo que sua missão é reunir os 
+dados entregue por protocolo de alto padrão como TCP/IP, e implantar dentro de quadros que denominamos frames e envia-los pela rede: MAC (Controle de Acesso ao Meio); Meio Físico ou 
+Camada Física e LLC (Controle de Link Lógico ou Quadro Ethernet.
+Em resumo, os padrões Ethernet são a espinha dorsal das redes de computadores modernas, e uma compreensão profunda e habilidades abrangentes são essenciais para configurar, manter e 
+aprimorar essas redes de maneira eficaz. Desde a escolha dos cabos até a solução de problemas e a migração de padrões, os profissionais de redes devem dominar essas habilidades para garantir 
+o funcionamento suave e confiável das redes Ethernet.
+</p>
+
+
+
+	
+	
+	
+  </div>
+
+  
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Esta página web é uma parte de uma demonstração de web design fluido feita por w3schools.com. Redimensione a janela do navegador para ver o conteúdo responder ao redimensionamento.</div>
+
+</body>
+</html>
