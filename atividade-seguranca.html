@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!--inicio da pagina -->
+<html lang="pt-br"> <!--o idioma da pagina-->
+<head> <!--a cabeça da pagina, que não é exibida no navegador Web-->
+    <meta charset="UTF-8"> <!--codificação de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para a página nos dispositivos móveis-->
+    <style type="text/css">
+body {
+  background-color: rgb(69, 219, 219);
+}
+
+h1 {
+  color: rgb(12, 9, 9);
+  text-align: center;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 20px;
+  text-align: center;
+}
+</style>
+
+    <title>seguranca da informação</title> <!--titulo da pagina-->
+</head>
+<body> <!--corpo da pagina -->  
+    <h1>insira seu nome </h1> <!--titulo do paragrafo-->
+    <input type="text" id="nameInput"/> <!-- -->
+    <button onclick="displayName()">Coloquem aqui </button> <!--botão para clicar/enviar -->
+    <p id="nameOutput" texte-align: center;> </p> <!-- identificar o elemento ao navegar-->
+  <!-- instruções para determinada execuções-->
+    <script>  
+     function displayName() {   
+    // get the input value <!-- comentario em javascript -->
+    var name = document.getElementById("nameInput").value; 
+       
+    // Display the input value <!-- comentario em javascript -->
+    document.getElementById("nameOutput").innerHTML = "Seja bem vindo pessoa, " + name +  " acesse o APP! ";
+
+}
+    </script>
+</body> 
+</html>
+
+
+
+<!--executa uma função-->
