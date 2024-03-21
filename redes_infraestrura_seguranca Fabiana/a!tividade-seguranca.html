@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- onde se define o arquivo como html-->
+
+<html lang="pt-br"> <!-- onde é definida a linguagem em pt-br -->
+
+<head>
+    <meta charset="UTF-8"> <!-- modificação de comandos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+            background-color: rgba(29, 190, 51, 0.486);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+
+    <title>segurança atividade</title> <!-- titulo -->
+</head>
+
+<body> <!-- estrutura ou corpo do site -->
+
+    <h1>Insira seu nome:</h1>
+
+    <!-- onde colocamos o nome ou o comando input para um retorno  de outro comando do armazenamento do nome-->
+    <!-- Inicio do formulario onde colocamos o Input para inserir o nome e retornar um valor no nameOutput-->
+
+    <input type="text" id="nameInput" />
+
+    <!-- o Comando em sí onde se coloca o nome  ou coloque aqui , onde colocamos  o nome-->
+
+    <button onclick="displayName()">Coloque aqui</button>
+
+    <p id="nameOutput"></p>
+    <!-- fim do formulario, onde  quando clicado o comando é enviado e se inicia um novo processo-->
+    <script>
+        // Onde sera mostrado o comando dado do Input "o nome " na tela 
+
+        function displayName() {
+
+            // recebe do input "o nome " e guarda no 
+            var name = document.getElementById("nameInput").value;
+            document.getElementById("nameOutput").innerHTML = "  Seja bem vindo pessoa  ," + name + "  acesse o APP! ";
+
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
